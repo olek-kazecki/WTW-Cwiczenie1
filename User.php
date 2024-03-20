@@ -30,7 +30,7 @@ class Client extends User
 	private string $state;
 	private string $country;
 	
-	public function __construct($name, $surname, $username) {
+	public function __construct(string $name, string $surname, string $username) {
         parent::__construct($name, $surname, $username);
 	}
 
@@ -90,7 +90,7 @@ class Client extends User
 
 class Admin extends User
 {
-    public function __construct($name, $surname, $username) {
+    public function __construct(string $name, string $surname, string $username) {
         parent::__construct($name, $surname, $username);
         $this->is_admin = true;
     }
